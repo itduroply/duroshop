@@ -44,7 +44,7 @@ export default async function BranchAdminDashboardPage() {
   const requisitions = (reqResult.data ?? []) as Requisition[]
   const userCount = userCountResult.count ?? 0
   const lowStock = inventory.filter(
-    (i) => i.quantity_on_hand <= (i.item as { low_stock_threshold?: number })?.low_stock_threshold ?? 5
+    (i) => i.quantity_on_hand <= ((i.item as { low_stock_threshold?: number })?.low_stock_threshold ?? 5)
   )
 
   return (
