@@ -128,10 +128,10 @@ export interface ApprovalStep {
 export interface Distribution {
   id: string
   requisition_id: string
-  distributor_clerk_id: string
   recipient_id: string
+  dispatched_by_clerk_id: string
   notes: string | null
-  distributed_at: string
+  dispatched_at: string
   recipient?: Recipient
 }
 

@@ -59,7 +59,7 @@ export async function dispatchRequisition(params: {
       .from('distributions')
       .insert({
         requisition_id: params.requisitionId,
-        distributor_clerk_id: userId,
+        dispatched_by_clerk_id: userId,
         recipient_id: params.recipientId,
         notes: params.notes ?? null,
       })
