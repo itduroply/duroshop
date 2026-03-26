@@ -59,9 +59,7 @@ export interface Inventory {
   id: string
   branch_id: string
   item_id: string
-  available_qty: number
-  issued_qty: number
-  low_stock_threshold: number
+  quantity_on_hand: number
   updated_at: string
   branch?: Branch
   item?: PopItem
